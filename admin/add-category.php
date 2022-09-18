@@ -1,4 +1,12 @@
-<?php include "header.php"; 
+<?php include "header.php";
+include "config.php";
+if(isset($_POST['save'])){
+    $name=$_POST['cat'];
+    $sql="insert into category (name) values ('$name')";
+    mysqli_query($link,$sql);
+    header("location:http://localhost/newssite/News_CMS/admin/category");
+
+}
 ?>
   <div id="admin-content">
       <div class="container">

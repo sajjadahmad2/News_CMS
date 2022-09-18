@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
   
     $result=mysqli_query($link,$sql);
     if($result){
-        header("location:http://localhost/newssite/admin/category.php");
+        header("location:http://localhost/newssite/News_CMS/admin/category.php");
     }
 
 

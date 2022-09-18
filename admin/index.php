@@ -4,7 +4,7 @@ session_start();
 
 if(isset($_SESSION['username'])){
         
-    header("location:http://localhost/newssite/admin/post.php");
+    header("location:http://localhost/newssite/News_CMS/admin/post.php");
     
     }
 
@@ -41,7 +41,7 @@ if(isset($_SESSION['username'])){
                                     $_SESSION['username']=$row['username'];
                                     $_SESSION['userid']=$row['user_id'];
                                     $_SESSION['role']=$row['role'];
-                                    header("location:http://localhost/newssite/admin/post.php");
+                                    header("location:http://localhost/newssite/News_CMS/admin/post.php");
                                 }
 
                             }else{

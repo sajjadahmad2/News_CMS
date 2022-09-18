@@ -19,7 +19,7 @@ if( isset($_FILES['upload'])){
 
     $sql="update category set post = post + 1 where category_id=$cat";
     mysqli_query($link,$sql);
-    header("location:http://localhost/newssite/admin"); 
+    header("location:http://localhost/newssite/News_CMS/admin"); 
  }
 
 

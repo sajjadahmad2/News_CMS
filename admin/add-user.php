@@ -2,7 +2,7 @@
  
 include "config.php";
 if($_SESSION['role'] == '0'){
-    header("location:http://localhost/newssite/admin/post.php");
+    header("location:http://localhost/newssite/News_CMS/admin/post.php");
 }
 if(isset($_POST['save'])){
 

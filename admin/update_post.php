@@ -23,7 +23,7 @@ else{
     $author=$_SESSION['userid'];
     $sql="update post set title='$title',description='$desc',category='$cat',post_img='$filename' where post_id=$id ;";
     mysqli_query($link,$sql);
-    header("location:http://localhost/newssite/admin/post.php");
+    header("location:http://localhost/newssite/News_CMS/admin/post.php");
  }
  //fetching the data code from id
  $sql="select * from post left join category on post.category=category.category_id left join user on post.author=user.user_id where post_id=$id"; 

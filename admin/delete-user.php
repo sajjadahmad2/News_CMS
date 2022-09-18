@@ -8,7 +8,7 @@ include "header.php";
     $sql="delete from user where user_id=$id";
     $result=mysqli_query($link,$sql);
     if($result){
-        header("location:http://localhost/newssite/admin/users.php");
+        header("location:http://localhost/newssite/News_CMS/admin/users.php");
     }else{
 
         echo"object is not deleted";    }

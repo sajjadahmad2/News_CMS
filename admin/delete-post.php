@@ -12,7 +12,7 @@ include "header.php";
     $sql.="update category set post= post-1 where category_id=$catid";
     $result=mysqli_multi_query($link,$sql);
     if($result){
-        header("location:http://localhost/newssite/admin/post.php");
+        header("location:http://localhost/newssite/News_CMS/admin/post.php");
     }else{
 
         echo"object is not deleted";    }
