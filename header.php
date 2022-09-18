@@ -25,9 +25,6 @@
                 <a href="index.php" id="logo"><img src="images/news.jpg"></a>
             </div>
             <!-- /LOGO -->
-            <div class="col-md-offset-9  col-md-1">
-                        <a href="index.php" class="admin-logout" >Login <?php echo "<br>"."Hello ". $_SESSION['username'] ?></a>
-                    </div>
         </div>
     </div>
 </div>
