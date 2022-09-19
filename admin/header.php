@@ -51,6 +51,9 @@ if(!isset($_SESSION['username'])){
                             <li>
                                 <a href="post.php">Post</a>
                             </li>
+                            <li>
+                                <a href="http://localhost/newssite/News_CMS">Vist Site</a>
+                            </li>
                             <?php
                             if($_SESSION['role'] == '1'){
                             ?> 

@@ -55,7 +55,16 @@
                     }
                     ?>
                     <li ><a class="<?php echo $active; ?>"href='category.php?catid=<?php echo $row['category_id']?>'><?php echo $row['category_name']?></a></li>
-                    <?php }?>
+                    <?php }
+                    session_start();
+                    if(!isset($_SESSION['username'])){
+                    ?>
+                    <li><a href="http://localhost/newssite/News_CMS/admin">Login</a></li>
+                    <?php
+                    }else{
+                        echo'<li><a href="admin/logout.php">Logout</a></li>';
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
