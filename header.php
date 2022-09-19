@@ -35,6 +35,7 @@
         <div class="row">
             <div class="col-md-12">
             <ul class='menu'>
+            <li><a href="http://localhost/newssite/News_CMS">Home</a></li>
                 <?php
                 include 'config.php';
                 $active="";
